@@ -1,4 +1,4 @@
-import { Container } from "@mui/material";
+import { Button, Card, Container } from "@mui/material";
 import styled, { createGlobalStyle } from "styled-components";
 
 export const Global: any = createGlobalStyle`
@@ -18,7 +18,17 @@ export const Global: any = createGlobalStyle`
 `;
 
 export const StyledContainer: any =  styled(Container)`
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+`;
+
+export const StyledCard: any = styled(Card)`
+    padding: 34px;
+    display: block !important;
+`;
+
+export const StyledButton: any = styled(Button)`
+    height: 40px;
+    width: 100%;
 `;

@@ -1,10 +1,13 @@
+import Home from "../../../pages/Home/Home";
+import Login from "../../../pages/Login/Login";
+
 export const routes: Array<any> = [
     {
         path: "/home",
-        component: null
+        component: <Home></Home>
     },
     {
         path: "/login",
-        component: null
+        component: <Login></Login>
     }
 ]

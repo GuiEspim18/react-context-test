@@ -6,7 +6,7 @@ const Routes: Function = (): any => {
     <BrowserRouter>
       <Switch>
         <Route path="*" element={<Navigate to="/login"/>} />
-        {routes.map((element: any) => <Route path={element.path} element={element.element} />)}
+        {routes.map((element: any) => <Route key={element.path} path={element.path} element={element.component} />)}
       </Switch>
     </BrowserRouter>
   );

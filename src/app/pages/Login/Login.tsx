@@ -1,12 +1,21 @@
 import { TextField } from "@mui/material";
-import { StyledContainer } from "../../../assets/css/Global/Global";
+import {
+  StyledButton,
+  StyledCard,
+  StyledContainer,
+} from "../../../assets/css/Global/Global";
 
 const Login: Function = (): any => {
-    return (
-        <StyledContainer>
-            <TextField placeholder="Name"/>
-        </StyledContainer>
-    );
-}
+  return (
+    <StyledContainer>
+      <StyledCard sx={{ maxWidth: "50%" }}>
+        <div>
+          <TextField id="outlined-basic" label="Name" variant="outlined" />
+          <StyledButton>Submit</StyledButton>
+        </div>
+      </StyledCard>
+    </StyledContainer>
+  );
+};
 
 export default Login;
