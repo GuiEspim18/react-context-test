@@ -1,8 +1,15 @@
-import Header from "../../utils/components/Header/Header";
+import { Fragment, useContext } from "react";
+import { LoginContext } from "../../shared/common/context/Login/Login.context";
 
 const Home: Function = (): any => {
+    const { name } = useContext(LoginContext);
+
     return (
-        <Header/>
+        <Fragment>
+            <section>
+                <h1>Olá {name}</h1>
+            </section>
+        </Fragment>
     );
 }
 
